@@ -17,7 +17,8 @@
 </head>
 
 <body>
-
+	<header>my header</header>
+	<footer>my footer</footer>
 </body>
 
 </html>
