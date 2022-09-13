@@ -17,5 +17,6 @@
 	<title>My WP Theme</title>
 </head>
 
-<body>
+<body <?php body_class(); ?>>
+	<?php wp_body_open(); ?>
 	<header>my header</header>
