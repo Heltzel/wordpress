@@ -10,10 +10,15 @@ if (!defined('MYTHEME_DIR_PATH')) {
 }
 require_once MYTHEME_DIR_PATH . '/inc/helpers/autoloader.php';
 
+function mytheme_get_theme_instance()
+{
+	\mytheme\Inc\Mytheme_theme::get_instance();
+}
+mytheme_get_theme_instance();
+
+
 function myTheme_enqueue_scripts()
 {
-
-
 	wp_register_style('style-css', get_stylesheet_uri(), [], filemtime(get_template_directory() . '/style.css'), 'all');
 	wp_register_style('bootstrap-css', get_template_directory_uri() . '/assets/src/library/css/bootstrap.min.css', [], false, 'all');
 

@@ -1,0 +1,17 @@
+{
+    "name": "heltz/themes",
+    "description": "Custom Wordpress theme",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Heltz\\Themes\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Heltzel",
+            "email": "heltzel.service@hotmail.com"
+        }
+    ],
+    "require": {}
+}
