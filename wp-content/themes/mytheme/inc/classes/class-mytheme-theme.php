@@ -27,5 +27,12 @@ class Mytheme_theme
 	public function setup_theme()
 	{
 		add_theme_support('title-tag');
+		add_theme_support('custom-logo', [
+			'height' => 720,
+			'width'  => 720,
+			'flex-height' => true,
+			'flex-widtht' => true,
+			'header-text' => ['site-title', 'site-description']
+		]);
 	}
 }
