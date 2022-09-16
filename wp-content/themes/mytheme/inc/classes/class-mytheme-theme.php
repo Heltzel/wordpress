@@ -15,10 +15,11 @@ class Mytheme_theme
 	use Singleton;
 
 	protected function __construct()
-	{
-		$this->set_hooks();
+	{ // load classes
+		Assets::get_instance();
+		$this->setup_hooks();
 	}
-	protected function set_hooks()
+	protected function setup_hooks()
 	{
 	}
 }
